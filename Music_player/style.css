@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(black, blue, rgb(228, 147, 224), blue, black) ;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.cont-2{
+    height: 600px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.cont-1{
+    z-index: 100;
+    height: 500px;
+    width: 800px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(175, 216, 227, 0.9), 0 0 10px rgb(189, 207, 149), 1px 2px 15px rgb(186, 70, 70);
+    border-radius: 10px;
+}
+
+.nav-1{
+    height: 30%;
+    background-image: linear-gradient(45deg, blue,blueviolet, violet, blueviolet,blue);
+    border-radius: 10px 10px 0 0;
+}
+
+.header{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+}
+
+.header span{
+    padding: 10px;
+}
+
+.header i{
+    color: white;
+    text-shadow: 0 0 5px red,2px 2px 10px burlywood,0 0 15px rebeccapurple ;
+}
+
+.header i:hover{
+    text-shadow: 0 0 5px rgb(189, 34, 34), 0 0 10px rgb(8, 8, 8), 0 0 15px rgb(251, 255, 0);
+    color: yellow;
+}
+
+.header h1{
+    color: rgb(191, 216, 214);
+    text-shadow: 2px 3px 5px black;
+}
+
+.header h1:hover{
+    text-shadow: 1px 2px 3px black, 2px 3px 5px rgb(199, 7, 154), 3px 4px 5px rgb(12, 205, 208);
+}
+
+.header #shuffle{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.header .head-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+
+.header #repeat{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.artist{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 5px;
+}
+
+.artist span{
+    padding: 10px;
+}
+
+.artist i{
+    color: white;
+    text-shadow: 0 0 5px red,2px 2px 10px burlywood,0 0 15px rebeccapurple ;
+}
+
+.artist i:hover{
+    text-shadow: 0 0 5px rgb(189, 34, 34), 0 0 10px rgb(8, 8, 8), 0 0 15px rgb(251, 255, 0);
+    color: yellow;
+}
+
+.artist h3{
+    color: rgb(191, 216, 214);
+    text-shadow: 2px 3px 5px black;
+}
+
+.artist h3:hover{
+    text-shadow: 1px 2px 3px black, 2px 3px 5px rgb(199, 7, 154), 3px 4px 5px rgb(12, 205, 208);
+}
+
+.artist #heart{
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    transform: translate(10%,10%);
+
+}
+
+.artist .art-name{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    font-size: 30px;
+}
+
+.artist #share{
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    transform: translate(10%, 10%);
+}
+
+
+
+.nav-2{
+    height: 70%;
+    margin: 0;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-2 img{
+    position: absolute;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+
+}
+
+.timer{
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+    color:rgb(214, 194, 194);
+    text-shadow: 1px 2px 5px black, -2px -3px 5px white,3px 4px 10px black, -3px -4px 15px white;
+}
+
+.play-pause{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+#backward{
+    font-size: 70px;
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    transform: translate(0%, 50%);
+    z-index: 10;
+}
+
+#play{
+    position: absolute ;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    z-index: 10;
+}
+
+#forward{
+    position: absolute;
+    font-size: 70px;
+    right: 10%;
+    top: 0%;
+    transform: translate(0%,50%);
+    z-index: 10;
+}
+
+.play-pause #backward,#forward{
+    color: white;
+    opacity: 0.6;
+    text-shadow: 0 0 5px rgb(189, 34, 34), 0 0 10px rgb(8, 8, 8), 0 0 15px rgb(251, 255, 0), 0 0 20px black;
+}
+
+.play-pause #play{
+    color: rgb(255, 255, 10);
+    opacity: 0.6;
+    text-shadow: 0 0 5px grey, 0 0 10px black;
+}
+
+.play-pause #play:hover{
+    color: rgb(209, 150, 231);
+    text-shadow: 0 0 5px blue, 0 0 10px rgb(196, 111, 177), ;
+    opacity: 0.9;
+}
+
+
+.mus-control{
+    display: flex;
+    position: relative;
+    padding: 40px;
+    color: white;
+}
+
+.mus-control #volume-unmute{
+    position: absolute;
+    left: 49%;
+    bottom: -60%;
+}
+
+.mus-control #mus-span{
+    width: 50px;
+}
+
+.mus-control #range{
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+input[type="range"] {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 60%; 
+    height: 4px !important;
+    /* background: #ddd;  */
+    border-radius: 5px; 
+    outline: none; 
+    background-image: linear-gradient(to right, black,rgb(64, 35, 35), red, rgb(219, 107, 107), white);
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-image: radial-gradient(black 20% , white 40%, red);
+    box-shadow: 0 0 10px white, 0 0 10px rgb(0, 234, 255);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+input[type="range"]:hover{
+    box-shadow: 0 0 5px rgb(255, 0, 102), 0 0 10px rgb(255, 0, 238);
+}
+
+
+.mus-control #volume-mute{
+    position: absolute;
+    right: 10%;
+    bottom: -100%;
+}
+
+.mus-control i{
+    color: white;
+    opacity: 0.6;
+    text-shadow: 1px 2px 3px black, 2px 3px 5px rgb(199, 7, 154), 3px 4px 5px rgb(12, 205, 208);
+}
+
+.mus-control i:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/* 
+.cont-2{
+    padding: 50px 100px;
+}
+
+.cont-1{
+    margin: 30px 0;
+    box-shadow: 0px 0px 30px 10px black ;
+}
+
+.nav-1{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.head-title{
+    font-size: 40px;
+    font-weight: 300;
+    text-shadow: 0 0 5px whitesmoke, 0 0 10px white, 0 0 15px blue;
+}
+
+.header{
+    display: flex;
+    margin: 0px 150px;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header :first-child{
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+}
+
+.header :nth-child(3){
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+
+
+.artist{
+    display: flex;
+    justify-content: center;
+    margin: 0px 150px;
+
+    position: relative;
+}
+
+.artist :first-child{
+    position: absolute;
+    left: 0;
+    top: 13px;
+}
+
+.artist :nth-child(3){
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+
+.art-name{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.timer{
+    font-size: 60px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+
+
+.nav-2{
+   
+    border-radius : 0px 0px 2px 2px;
+}
+
+
+
+.play-pause{
+    display: flex;
+    margin: 0 200px;
+    padding: 40px ;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+
+#backward{
+    font-size: 70px;
+    position: absolute;
+    left: 0;
+}
+
+#forward{
+    position: absolute;
+    font-size: 70px;
+    right: 0;
+    
+}
+
+#play{
+    position: absolute ;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+}
+
+
+.mus-control{
+    display: flex;
+    position: relative;
+    padding: 40px;
+   
+
+}
+
+.mus-control #volume{
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+}
+
+
+/* 
+.mus-control #volume-mute{
+    font-size: 45px;
+    position: absolute;
+    right: 10%;
+}
+
+.nav-1 i{
+    color: rgba(1, 0, 2, 0.6);
+    font-weight: 900;
+
+}
+
+.nav-1 i:hover{
+    color: rgba(237, 230, 230, 1);
+    text-shadow: 0 0 5px black,0 0 10px black,0 0 15px black;
+} */ 
