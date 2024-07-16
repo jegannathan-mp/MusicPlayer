@@ -174,12 +174,3 @@ timeRange.addEventListener("input", ()=>{
     let seekTime = (timeRange.value / 100)*Audio.duration;
     Audio.currentTime = seekTime;
 })
-
-
-
-
-
-
-
-
-
